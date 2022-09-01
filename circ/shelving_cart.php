@@ -19,8 +19,8 @@
     exit();
   }
 
-  if ( $_GET[barcodeNmbr] ) {
-         $barcode = trim($_GET[barcodeNmbr]);
+  if ( $_GET["barcodeNmbr"] ) {
+         $barcode = trim($_GET["barcodeNmbr"]);
   }
     else {
          $barcode = trim($_POST["barcodeNmbr"]);
