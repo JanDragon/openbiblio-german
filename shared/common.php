@@ -49,7 +49,7 @@
   
   # Escaping shorthands
   function H($s) {
-    if (defined(OBIB_CHARSET)) {
+    if (defined('OBIB_CHARSET')) {
       $charset = OBIB_CHARSET;
     } else {
       $charset = "";
@@ -102,11 +102,7 @@
   }
 
   # code character set in HTTP header if specified
-  if (OBIB_CHARSET != "") {
-    header('Content-Type: text/html; charset=' . H(OBIB_CHARSET));
-  }
-  # code character set in HTTP header if specified
-  if (OBIB_CHARSET != "") {
+  if (defined('OBIB_CHARSET') && OBIB_CHARSET != "") {
     header('Content-Type: text/html; charset=' . H(OBIB_CHARSET));
   }
 

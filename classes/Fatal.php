@@ -13,7 +13,7 @@ class Fatal {
     return $old;
   }
   /* "Can't happen" states */
-  function internalError($msg) {
+  static function internalError($msg) {
     global $_Error_FatalHandler;
     if (method_exists($_Error_FatalHandler, 'internalError')) {
       $_Error_FatalHandler->internalError($msg);

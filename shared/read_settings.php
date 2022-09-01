@@ -19,7 +19,7 @@
    ****************************************************************************
    */
   $setQ = new SettingsQuery();
-  $setQ->connect();
+  $setQ->connect_e();
   if ($setQ->errorOccurred()) {
     $setQ->close();
     displayErrorPage($setQ);
