@@ -28,4 +28,4 @@ function fileGetContents($filename){
   }
   return $result;
 }
-?>
+

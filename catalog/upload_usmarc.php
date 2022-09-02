@@ -120,4 +120,4 @@ if ($_POST["test"]=="true") {
 	
 include("../shared/footer.php");
 
-?>
+

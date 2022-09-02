@@ -63,5 +63,5 @@
   $msg = "New Field Added Successfully ";
   header("Location: custom_marc_view.php?materialCd=".U($rec['materialCd'])."&msg=".U($msg));
 
-?>
+
     

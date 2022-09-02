@@ -15,4 +15,4 @@
  echo $loc->getText("admin_noauth");
 
   include("../shared/footer.php");
-?>
+

@@ -54,4 +54,4 @@
   $msg = $loc->getText("biblioCopyDelSuccess",array("barcode"=>$barcode));
   header("Location: ../shared/biblio_view.php?bibid=".U($bibid)."&msg=".U($msg));
   exit();
-?>
+

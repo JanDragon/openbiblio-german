@@ -94,4 +94,4 @@ function printUsmarcInputText($tag,$subfieldCd,$required,&$postVars,&$pageErrors
   echo "</td></tr>\n";
 }
 
-?>
+

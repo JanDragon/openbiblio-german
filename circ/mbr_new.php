@@ -99,4 +99,4 @@
   $msg = $loc->getText("mbrNewSuccess");
   header("Location: ../circ/mbr_view.php?mbrid=".U($mbrid)."&reset=Y&msg=".U($msg));
   exit();
-?>
+

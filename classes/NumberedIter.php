@@ -19,4 +19,4 @@ class NumberedIter extends Iter {
     $this->n++;
   }
 }
-?>
+

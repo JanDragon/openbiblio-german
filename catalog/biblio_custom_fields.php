@@ -64,5 +64,5 @@
     $fldindex = "";
     printUsmarcInputText($mytag,$mysubfieldcd,$myrequired,$postVars,$pageErrors,$marcTags,$descrs,FALSE,$mycntrltype,$fldindex);
   }
-?>
+
 

@@ -22,7 +22,7 @@ class Fatal {
     }
   }
   /* Query errors */
-  function dbError($sql, $msg, $dberror) {
+  static function dbError($sql, $msg, $dberror) {
     global $_Error_FatalHandler;
     if (method_exists($_Error_FatalHandler, 'dbError')) {
       $_Error_FatalHandler->dbError($sql, $msg, $dberror);
@@ -31,7 +31,7 @@ class Fatal {
     }
   }
   /* Generic */
-  function error($msg) {
+  static function error($msg) {
     global $_Error_FatalHandler;
     if (method_exists($_Error_FatalHandler, 'error')) {
       $_Error_FatalHandler->error($msg);
@@ -40,4 +40,3 @@ class Fatal {
     }
   }
 }
-?>

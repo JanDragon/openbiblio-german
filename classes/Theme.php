@@ -502,4 +502,4 @@ class Theme {
 
 }
 
-?>
+

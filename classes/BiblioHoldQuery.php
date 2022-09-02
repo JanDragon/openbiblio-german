@@ -198,4 +198,4 @@ class BiblioHoldQuery extends Query {
   }
 
 }
-?>
+

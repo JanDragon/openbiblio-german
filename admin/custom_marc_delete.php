@@ -18,4 +18,4 @@
   $matQ->close();
   $msg = "Field Successfully Deleted";
   header("Location: custom_marc_view.php?materialCd=".U($_GET["materialCd"])."&msg=".U($msg));
-?>
+

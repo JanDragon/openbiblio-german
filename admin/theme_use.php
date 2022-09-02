@@ -43,4 +43,4 @@
   unset($_SESSION["pageErrors"]);
 
   header("Location: ../admin/theme_list.php");
-?>
+

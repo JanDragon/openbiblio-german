@@ -79,4 +79,4 @@ class Layout_A4_barcode_1x16 {
   }
 }
 
-?>
+

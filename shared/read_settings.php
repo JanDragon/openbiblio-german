@@ -117,4 +117,4 @@
   define("OBIB_BORDER_WIDTH",$theme->getBorderWidth());
   define("OBIB_PADDING",$theme->getTablePadding());
 
-?>
+

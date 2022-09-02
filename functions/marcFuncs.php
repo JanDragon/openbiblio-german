@@ -25,4 +25,4 @@ function printUsmarcText($tag,$subfieldCd,&$marcTags,&$marcSubflds,$showTagDesc)
   }
 }
 
-?>
+

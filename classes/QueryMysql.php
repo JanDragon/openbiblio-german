@@ -87,4 +87,3 @@ class QueryMysql extends QueryBase
     return mysql_real_escape_string($string, $this->connection());
     }
   }
-?>

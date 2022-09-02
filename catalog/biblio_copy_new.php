@@ -111,4 +111,4 @@
   $msg = $loc->getText("biblioCopyNewSuccess");
   header("Location: ../shared/biblio_view.php?bibid=".U($bibid)."&msg=".U($msg));
   exit();
-?>
+

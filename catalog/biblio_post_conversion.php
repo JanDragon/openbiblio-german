@@ -26,4 +26,4 @@
       $postVars['fieldIds'][$key] = $biblioFld->getFieldid();
     }
   }
-?>
+

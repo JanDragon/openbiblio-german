@@ -49,4 +49,4 @@
   #**************************************************************************
   $msg = $loc->getText("holdDelSuccess");
   header("Location: ".$returnNav."&msg=".U($msg));
-?>
+

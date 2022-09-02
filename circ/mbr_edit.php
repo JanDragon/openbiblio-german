@@ -103,4 +103,4 @@
   $msg = $loc->getText("mbrEditSuccess");
   header("Location: ../circ/mbr_view.php?mbrid=".U($mbr->getMbrid())."&reset=Y&msg=".U($msg));
   exit();
-?>
+

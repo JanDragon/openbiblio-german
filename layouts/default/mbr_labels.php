@@ -53,4 +53,4 @@ class Layout_mbr_labels {
   }
 }
 
-?>
+

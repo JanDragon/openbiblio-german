@@ -64,9 +64,9 @@ class Search {
     if ($ac == $bc) {
       return 0;
     }
-    return $ac > bc ? -1 : +1;
+    return $ac > $bc ? -1 : +1;
   }
-  function explodeQuoted($str) {
+  static function explodeQuoted($str) {
     $elements=array();
     $s = "";
     $q = false;
@@ -103,4 +103,4 @@ class Search {
   }
 }
 
-?>
+

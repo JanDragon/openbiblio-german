@@ -19,4 +19,4 @@ class MapIter extends Iter {
     $this->iter->next();
   }
 }
-?>
+

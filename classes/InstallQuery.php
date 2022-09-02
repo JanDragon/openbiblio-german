@@ -138,4 +138,4 @@ class InstallQuery extends Query {
   }
 }
 
-?>
+

@@ -14,4 +14,3 @@ class QueryError extends QueryBase
 
     }
   }
-?>

@@ -50,4 +50,4 @@ class MemberLoginQuery extends Query {
 
 }
 
-?>
+

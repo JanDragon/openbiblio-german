@@ -22,4 +22,4 @@ class DbError extends ObibError {
     return $s;
   }
 }
-?>
+

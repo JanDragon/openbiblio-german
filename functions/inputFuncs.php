@@ -142,4 +142,4 @@ function printSelect($fieldName,$domainTable,&$postVars,$disabled=FALSE){
   }
   echo dmSelect($domainTable, $fieldName, "", FALSE, $attrs);
 }
-?>
+

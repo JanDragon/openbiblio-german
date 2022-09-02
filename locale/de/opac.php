@@ -40,7 +40,7 @@
 #****************************************************************************
 $trans["opac_Header"]        = "\$text='Onlinekatalog (OPAC)';";
 $trans["opac_WelcomeMsg"]    = "\$text=
-'Willkommen im Onlinekatalog unserer Bibliothek. Durchsuchen Sie unseren Katalog nach Informationen über die Medien in unserem Bestand.';";
+'Willkommen im Onlinekatalog unserer Bibliothek. Durchsuchen Sie unseren Katalog nach Informationen ï¿½ber die Medien in unserem Bestand.';";
 $trans["opac_SearchTitle"]   = "\$text='Suche Medium durch:';";
 $trans["opac_Keyword"]       = "\$text='Suchbegriff';";
 $trans["opac_Title"]         = "\$text='Titel';";
@@ -68,7 +68,7 @@ $trans["Invalid Logon. Maybe you don't have a Secret Word? Please ask the Staff!
 #****************************************************************************
 #*  Translation text for page mbr_account.php
 #****************************************************************************
-$trans["mbrViewBalMsg"]           = "\$text='Bemerkung: Benutzer hat ausstehende Gebühren von %bal%.';";
+$trans["mbrViewBalMsg"]           = "\$text='Bemerkung: Benutzer hat ausstehende Gebï¿½hren von %bal%.';";
 $trans["mbrViewHead1"]            = "\$text='Benutzerinformation:';";
 $trans["mbrViewName"]             = "\$text='Name:';";
 $trans["mbrViewCardNmbr"]         = "\$text='Benutzernummer:';";
@@ -81,14 +81,14 @@ $trans["mbrViewOutHdr2"]          = "\$text='Medienart';";
 $trans["mbrViewOutHdr3"]          = "\$text='Mediennummer';";
 $trans["mbrViewOutHdr4"]          = "\$text='Titel';";
 $trans["mbrViewOutHdr5"]          = "\$text='Autor';";
-$trans["mbrViewOutHdr6"]          = "\$text='Rückgabe';";
-$trans["mbrViewOutHdr7"]          = "\$text='überfällige<br>Tage';";
-$trans["mbrViewOutHdr8"]          = "\$text='Verlängerungen';";
+$trans["mbrViewOutHdr6"]          = "\$text='Rï¿½ckgabe';";
+$trans["mbrViewOutHdr7"]          = "\$text='ï¿½berfï¿½llige<br>Tage';";
+$trans["mbrViewOutHdr8"]          = "\$text='Verlï¿½ngerungen';";
 $trans["mbrViewNoCheckouts"]      = "\$text='Derzeit keine Medien ausgeliehen.';";
-$trans["Cannot renew item *"]     = "\$text='Kann Medium nicht verlängern *';";
-$trans["Renew item"]              = "\$text='Verlängere Medium';";
+$trans["Cannot renew item *"]     = "\$text='Kann Medium nicht verlï¿½ngern *';";
+$trans["Renew item"]              = "\$text='Verlï¿½ngere Medium';";
 $trans["mbrViewOutHdr9"]          = "\$text='Mal';";
-$trans["* You cannot renew, if you are more then 7 days too late"] = "\$text='* Medien, die mehr als 7 Tage überfällig sind, können nicht verlängert werden.';";
+$trans["* You cannot renew, if you are more then 7 days too late"] = "\$text='* Medien, die mehr als 7 Tage ï¿½berfï¿½llig sind, kï¿½nnen nicht verlï¿½ngert werden.';";
 $trans["mbrViewHead5"]            = "\$text='Vorbestellen:';";
 $trans["mbrViewBarcode"]          = "\$text='Mediennummer:';";
 $trans["indexSearch"]             = "\$text='Suche';";
@@ -100,9 +100,9 @@ $trans["mbrViewHoldHdr4"]         = "\$text='Mediennummer';";
 $trans["mbrViewHoldHdr5"]         = "\$text='Titel';";
 $trans["mbrViewHoldHdr6"]         = "\$text='Autor';";
 $trans["mbrViewHoldHdr7"]         = "\$text='Status';";
-$trans["mbrViewHoldHdr8"]         = "\$text='Rückgabe';";
+$trans["mbrViewHoldHdr8"]         = "\$text='Rï¿½ckgabe';";
 $trans["mbrViewNoHolds"]          = "\$text='Derzeit keine Medien vorbestellt.';";
-$trans["Please send a mail to delete holds"] = "\$text='Wenn Sie Vorbestellungen löschen wollen, mailen Sie uns bitte!';";
+$trans["Please send a mail to delete holds"] = "\$text='Wenn Sie Vorbestellungen lï¿½schen wollen, mailen Sie uns bitte!';";
 
 #****************************************************************************
 #*  Translation text for page mbr_print_checkouts.php
@@ -111,7 +111,7 @@ $trans["mbrPrintCheckoutsTitle"]  = "\$text='Ausleihen von %mbrName%';";
 $trans["mbrPrintCheckoutsHdr1"]   = "\$text='Aktuelles Datum:';";
 $trans["mbrPrintCheckoutsHdr2"]   = "\$text='Benutzer:';";
 $trans["mbrPrintCheckoutsHdr3"]   = "\$text='Benutzernummer:';";
-$trans["mbrPrintCloseWindow"]     = "\$text='Schließe Fenster';";
+$trans["mbrPrintCloseWindow"]     = "\$text='Schlieï¿½e Fenster';";
 
 #****************************************************************************
 #*  Translation text for page place_hold.php
@@ -120,4 +120,4 @@ $trans["placeHoldErr2"]           = "\$text='Die Mediennummer exitiert nicht.';"
 $trans["placeHoldErr3"]           = "\$text='Das Mitglied hat dieses Medium bereits ausgeliehen - keine Vorbestellung angelegt.';";
 $trans["This item is not checked out or on hold."]           = "\$text='Dieses Exemplar ist weder vorbestellt noch ausgeliehen.';";
 
-?>
+

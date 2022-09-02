@@ -11,7 +11,7 @@ class FieldError extends ObibError {
     parent::ObibError($msg);
     $this->field = $field;
   }
-  function listExtract($errors) {
+  static function listExtract($errors) {
     $msgs = array();
     $l = array();
     foreach ($errors as $e) {
@@ -40,4 +40,4 @@ class FieldError extends ObibError {
   }
 }
 
-?>
+

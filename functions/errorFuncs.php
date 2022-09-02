@@ -16,4 +16,4 @@ function displayErrorPage($query){
   echo "<!-- SQL = ".H($query->getSQL())."-->\n";
   exit($query->getError());
 }
-?>
+

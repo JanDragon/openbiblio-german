@@ -50,13 +50,13 @@ $trans["homeLicenseLink"]          = "\$text = 'Lizenz';";
 #****************************************************************************
 #*  Translation text for page admin.php
 #****************************************************************************
-$trans["adminSummary"]             = "\$text = 'Admin-Übersicht';";
+$trans["adminSummary"]             = "\$text = 'Admin-ï¿½bersicht';";
 $trans["adminStaff"]               = "\$text = 'Mitarbeiter';";
 $trans["adminSettings"]            = "\$text = 'Bibliothekseinst.';";
 $trans["adminMaterialTypes"]       = "\$text = 'Medienarten';";
 $trans["adminCollections"]         = "\$text = 'Genres';";
 $trans["adminThemes"]              = "\$text = 'Layout';";
-$trans["adminTranslation"]         = "\$text = 'Übersetzung';";
+$trans["adminTranslation"]         = "\$text = 'ï¿½bersetzung';";
 $trans["Member Types"]             = "\$text = 'Mitgliederarten';";
 $trans["Member Fields"]            = "\$text = 'Mitgliederfelder';";
 $trans["Copy Fields"]              = "\$text = 'Exemplarfelder';";
@@ -78,8 +78,8 @@ $trans["catalogBibMarcEditFld"]    = "\$text = 'Bearb. MARC Feld';";
 $trans["catalogCopyNew"]           = "\$text = 'Neues Exem.';";
 $trans["catalogCopyEdit"]          = "\$text = 'Bearb. Exem.';";
 $trans["catalogHolds"]             = "\$text = 'Vorbestellungen';";
-$trans["catalogDelete"]            = "\$text = 'Lösche';";
-$trans["catalogBibNewLike"]        = "\$text = 'Ähnliches Neu';";
+$trans["catalogDelete"]            = "\$text = 'Lï¿½sche';";
+$trans["catalogBibNewLike"]        = "\$text = 'ï¿½hnliches Neu';";
 $trans["catalogBibNew"]            = "\$text = 'Neues Medium';";
 $trans["Upload Marc Data"]         = "\$text = 'MARC Daten laden';";
 $trans["History"]                  = "\$text = 'Historie';";
@@ -87,12 +87,12 @@ $trans["History"]                  = "\$text = 'Historie';";
 #****************************************************************************
 #*  Translation text for page reports.php
 #****************************************************************************
-$trans["reportsSummary"]           = "\$text = 'Berichte Übersicht';";
+$trans["reportsSummary"]           = "\$text = 'Berichte ï¿½bersicht';";
 $trans["reportsReportListLink"]    = "\$text = 'Berichte';";
 $trans["reportsLabelsLink"]        = "\$text = 'Etiketten';";
 $trans["reportsLettersLink"]       = "\$text = 'Briefe';";
 $trans["Report Results"]           = "\$text = 'Berichtsergebnis';";
-$trans["Report List"]              = "\$text = 'Berichteübersicht';";
+$trans["Report List"]              = "\$text = 'Berichteï¿½bersicht';";
 $trans["Report Criteria"]          = "\$text = 'Berichtskriterien';";
 
 #****************************************************************************
@@ -111,10 +111,10 @@ $trans["memberInfo"]="\$text = 'Benutzerinfos';";
 $trans["memberSearch"]="\$text = 'Benutzersuche';";
 $trans["editInfo"]="\$text = 'Bearb. Infos';";
 $trans["checkoutHistory"]= "\$text = 'Ausleih-History';";
-$trans["account"]="\$text = 'Gebühren';";
-$trans["checkIn"]="\$text = 'Medienrückgabe';";
+$trans["account"]="\$text = 'Gebï¿½hren';";
+$trans["checkIn"]="\$text = 'Medienrï¿½ckgabe';";
 $trans["memberSearch"]= "\$text = 'Benutzersuche';";
 $trans["newMember"]= "\$text = 'Neuer Benutzer';";
 $trans["Offline Circulation"]= "\$text = 'Offline Ausleihe';";
 //$trans["account"]        	= "\$text = 'Account';";
-?>
+

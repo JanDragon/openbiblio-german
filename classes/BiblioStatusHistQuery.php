@@ -209,4 +209,4 @@ class BiblioStatusHistQuery extends Query {
   }
 
 }
-?>
+
