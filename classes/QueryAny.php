@@ -45,4 +45,3 @@ class QueryAny
     return $db_code;
     }
   }
-?>

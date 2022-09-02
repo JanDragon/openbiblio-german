@@ -40,4 +40,3 @@ class DbOld {
     $link->data_seek($this->results, 0);
   }
 }
-?>

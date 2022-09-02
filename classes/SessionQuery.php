@@ -81,4 +81,4 @@ class SessionQuery extends Query {
   }
 }
 
-?>
+

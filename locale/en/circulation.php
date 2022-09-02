@@ -309,4 +309,4 @@ $trans["Actions which did not produce an error have completed. Think carefully b
 $trans["Errors"]     = "\$text='Errors';";
 $trans["Offline Upload Successful."]     = "\$text='Offline Upload Successful.';";
 
-?>
+

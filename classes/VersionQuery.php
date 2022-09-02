@@ -45,4 +45,4 @@ class VersionQuery extends Query {
 
 }
 
-?>
+

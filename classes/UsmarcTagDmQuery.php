@@ -120,4 +120,4 @@ class UsmarcTagDmQuery extends Query {
 
 }
 
-?>
+

@@ -121,4 +121,4 @@ class SettingsQuery extends Query {
   }
 }
 
-?>
+

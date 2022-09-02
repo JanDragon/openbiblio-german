@@ -68,4 +68,4 @@ function getTagDesc($tag,$subfldCd,&$tagDesc,&$subfldDesc,&$ind1Desc,&$ind2Desc)
   }
   return true;
 }
-?>
+

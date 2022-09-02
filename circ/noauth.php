@@ -15,4 +15,4 @@
   echo $loc->getText("NotAuth");
 
   include("../shared/footer.php"); 
-?>
+

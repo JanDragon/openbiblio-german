@@ -71,4 +71,4 @@ class UsmarcBlockDmQuery extends Query {
 
 }
 
-?>
+

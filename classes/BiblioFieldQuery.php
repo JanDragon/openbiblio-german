@@ -153,4 +153,4 @@ class BiblioFieldQuery extends Query {
 
 }
 
-?>
+

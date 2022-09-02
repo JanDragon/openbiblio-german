@@ -58,4 +58,4 @@ class Layout_barcode_98up {
   }
 }
 
-?>
+

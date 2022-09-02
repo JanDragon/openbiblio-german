@@ -89,4 +89,4 @@
   #*  Go back to member view
   #**************************************************************************
   header("Location: ../circ/mbr_view.php?mbrid=".U($_POST["mbrid"]));
-?>
+

@@ -60,4 +60,4 @@ class Layout_labels {
   }
 }
 
-?>
+

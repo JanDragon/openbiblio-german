@@ -348,4 +348,4 @@ class BiblioSearchQuery extends Query {
 
 }
 
-?>
+

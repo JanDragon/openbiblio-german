@@ -88,4 +88,4 @@
 
   header("Location: ../admin/settings_edit_form.php?reset=Y&updated=Y");
   exit();
-?>
+

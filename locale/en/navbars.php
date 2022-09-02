@@ -117,4 +117,4 @@ $trans["memberSearch"]= "\$text = 'Member Search';";
 $trans["newMember"]= "\$text = 'New Member';";
 $trans["Offline Circulation"]= "\$text = 'Offline Circulation';";
 //$trans["account"]        	= "\$text = 'Account';";
-?>
+

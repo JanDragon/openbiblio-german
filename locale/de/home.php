@@ -45,24 +45,24 @@ $trans["indexTab"]           = "\$text='Reiter';";
 $trans["indexDesc"]          = "\$text='Beschreibung';";
 $trans["indexCirc"]          = "\$text='Ausleihe';";
 $trans["indexCircDesc1"]     = "\$text='Benutzen Sie diesen Reiter um die Benutzer zu verwalten.';";
-$trans["indexCircDesc2"]     = "\$text='Mitglieder-Verwaltung (Neu, Suche, Bearbeiten, Löschen)';";
-$trans["indexCircDesc3"]     = "\$text='Ausleihe, Vorbestellungen, Gebührenverwaltung und History der Mitglieder';";
-$trans["indexCircDesc4"]     = "\$text='Medienrückgabe und Eingangsablage';";
+$trans["indexCircDesc2"]     = "\$text='Mitglieder-Verwaltung (Neu, Suche, Bearbeiten, Lï¿½schen)';";
+$trans["indexCircDesc3"]     = "\$text='Ausleihe, Vorbestellungen, Gebï¿½hrenverwaltung und History der Mitglieder';";
+$trans["indexCircDesc4"]     = "\$text='Medienrï¿½ckgabe und Eingangsablage';";
 //$trans["indexCircDesc5"]     = "\$text='Member late fee payment';";
 $trans["indexCat"]           = "\$text='Katalogisierung';";
 $trans["indexCatDesc1"]      = "\$text='Benutzen Sie diesen Reiter um die Medien zu verwalten.';";
-$trans["indexCatDesc2"]      = "\$text='Medien-Verwaltung (Neu, Suche, Bearbeiten, Löschen)';";
+$trans["indexCatDesc2"]      = "\$text='Medien-Verwaltung (Neu, Suche, Bearbeiten, Lï¿½schen)';";
 //$trans["indexCatDesc3"]      = "\$text='Import bibliography from USMarc record';";
 $trans["indexAdmin"]         = "\$text='Admin';";
-$trans["indexAdminDesc1"]    = "\$text='Benutzen Sie diesen Reiter um die Mitarbeiter zu verwalten und die Programmeinstellungen zu ändern.';";
-$trans["indexAdminDesc2"]    = "\$text='Mitarbeiter Verwaltung (Neu, Bearbeiten, Passwort, Löschen)';";
+$trans["indexAdminDesc1"]    = "\$text='Benutzen Sie diesen Reiter um die Mitarbeiter zu verwalten und die Programmeinstellungen zu ï¿½ndern.';";
+$trans["indexAdminDesc2"]    = "\$text='Mitarbeiter Verwaltung (Neu, Bearbeiten, Passwort, Lï¿½schen)';";
 $trans["indexAdminDesc3"]    = "\$text='Generelle Bibliothekseinstellungen';";
 $trans["indexAdminDesc5"]    = "\$text='Liste der Medienarten';";
 $trans["indexAdminDesc4"]    = "\$text='Liste der Genres';";
 $trans["indexAdminDesc6"]    = "\$text='Layout-Editor';";
 $trans["indexReports"]       = "\$text='Berichte';";
-$trans["indexReportsDesc1"]  = "\$text='Benutzen Sie diesen Reiter um Berichte über die Daten zu erstellen.';";
+$trans["indexReportsDesc1"]  = "\$text='Benutzen Sie diesen Reiter um Berichte ï¿½ber die Daten zu erstellen.';";
 $trans["indexReportsDesc2"]  = "\$text='Berichte.';";
 $trans["indexReportsDesc3"]  = "\$text='Etiketten.';";
 
-?>
+

@@ -93,4 +93,4 @@ function moneyFormat($amount,$decimals){
   
   return $result;
 }
-?>
+

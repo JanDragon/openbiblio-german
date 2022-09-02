@@ -122,4 +122,3 @@ class QueryBase
     $this->username = $this->string_safe($username);
     }
   }
-?>

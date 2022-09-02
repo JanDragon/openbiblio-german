@@ -83,4 +83,4 @@
   $msg = $loc->getText("biblioMarcEditSuccess");
   header("Location: ../catalog/biblio_marc_list.php?bibid=".U($bibid)."&msg=".U($msg));
   exit();
-?>
+

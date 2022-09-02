@@ -242,4 +242,4 @@ class Settings {
 
 }
 
-?>
+

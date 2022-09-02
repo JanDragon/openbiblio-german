@@ -14,4 +14,4 @@
     include("../locale/".OBIB_LOCALE."/help/".$page.".php");
   }
   include("../shared/help_footer.php");
-?>
+

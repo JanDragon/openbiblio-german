@@ -53,4 +53,4 @@ class CheckoutPrivsQuery extends Query {
   }
 }
 
-?>
+

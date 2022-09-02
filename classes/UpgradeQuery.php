@@ -400,4 +400,4 @@ class UpgradeQuery extends InstallQuery {
   }
 }
 
-?>
+

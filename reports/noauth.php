@@ -12,4 +12,4 @@
   include("../shared/header.php");
   echo $loc->getText("noauthMsg");
   include("../shared/footer.php");
-?>
+

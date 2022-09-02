@@ -89,4 +89,4 @@
   #*  Go back to member view
   #**************************************************************************
   header("Location: ../opac/mbr_account.php?mbrid=".U($_POST["mbrid"]));
-?>
+

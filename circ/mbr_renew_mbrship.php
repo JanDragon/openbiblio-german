@@ -72,4 +72,4 @@
   header("Location: ../circ/mbr_view.php?mbrid=".$mbr->getMbrid()."&reset=Y&msg=".$msg);
   exit();
 }
-?> 
+

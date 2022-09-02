@@ -382,4 +382,4 @@ class BiblioQuery extends Query {
 
 }
 
-?>
+

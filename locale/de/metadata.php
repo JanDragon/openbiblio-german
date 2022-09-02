@@ -9,4 +9,4 @@
 $lang_metadata = array(
    "locale_description" => "Deutsch"
 );
-?>
+

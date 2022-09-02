@@ -448,4 +448,4 @@ $trans["Custom Member Fields"]                    = "\$text = 'Custom Member Fie
 $trans["Member field, %desc%, has been added."]   = "\$text = 'Member field, %desc%, has been added.';";
 $trans["Add custom member field"]                 = "\$text = 'Add custom member field';";
 
-?>
+

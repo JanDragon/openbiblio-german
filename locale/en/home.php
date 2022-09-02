@@ -66,4 +66,4 @@ $trans["indexReportsDesc1"]  = "\$text='Use this tab to run reports on your libr
 $trans["indexReportsDesc2"]  = "\$text='Report.';";
 $trans["indexReportsDesc3"]  = "\$text='Labels.';";
 
-?>
+

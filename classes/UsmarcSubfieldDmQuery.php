@@ -113,4 +113,4 @@ class UsmarcSubfieldDmQuery extends Query {
 
 }
 
-?>
+

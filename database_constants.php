@@ -3,7 +3,7 @@
  *
  *                           A C H T U N G !
  *
- *  ||  Bitte verändern Sie die folgenden Datenbankkonstanten zu der        ||
+ *  ||  Bitte verï¿½ndern Sie die folgenden Datenbankkonstanten zu der        ||
  *  \/  MySQL Datenbank und dem MySQL-Benutzer, den Sie erstellt haben.     \/
  *********************************************************************************
  */
@@ -17,4 +17,4 @@ define("MAIN_LOCALE",   "de"); // de oder en
  *  ||                                                                      ||
  *********************************************************************************
  */
-?>
+

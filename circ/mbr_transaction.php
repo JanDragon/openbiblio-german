@@ -75,4 +75,4 @@
   $msg = $loc->getText("mbrTransactionSuccess");
   header("Location: ../circ/mbr_account.php?mbrid=".U($mbrid)."&reset=Y&msg=".U($msg));
   exit();
-?>
+

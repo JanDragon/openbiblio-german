@@ -220,4 +220,4 @@ $trans["Late fee (barcode=%barcode%)"]                            = "\$text = 'L
 
 $trans[""]  = "\$text = '';";
 
-?>
+

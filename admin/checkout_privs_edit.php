@@ -31,4 +31,4 @@
                  $_POST['checkout_limit'], $_POST['renewal_limit']);
   $privQ->close();
   header("Location: ../admin/checkout_privs_list.php?msg=".U($loc->getText('Privileges updated')));
-?>
+

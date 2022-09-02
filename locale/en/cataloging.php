@@ -241,4 +241,4 @@ $trans["Member"]                             = "\$text = 'Member';";
 $trans["Due Date"]                           = "\$text = 'Due Date';";
 $trans["No history was found."]              = "\$text = 'No history was found.';";
 
-?>
+

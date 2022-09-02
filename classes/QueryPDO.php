@@ -8,4 +8,3 @@ class QueryPDO extends QueryBase
   {
   protected $type = 'pdo';
   }
-?>
