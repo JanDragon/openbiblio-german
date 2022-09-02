@@ -37,7 +37,7 @@ class Member {
   var $_custom = array();
   var $_loc;
 
-  function Member () {
+  function __construct() {
     $this->_loc = new Localize(OBIB_LOCALE,"classes");
   }
 

@@ -6,7 +6,7 @@
  * FIXME - lose this cruft.
  */
 class DbOld {
-  function DbOld($results, $id) {
+  function __construct($results, $id) {
     $this->results = $results;
     $this->id = $id;
   }

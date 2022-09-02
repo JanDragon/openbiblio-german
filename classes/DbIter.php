@@ -4,7 +4,7 @@
  */
  
 class DbIter extends Iter {
-  function DbIter($results) {
+  function __construct($results) {
     $this->results = $results;
   }
   function count() {

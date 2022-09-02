@@ -18,6 +18,7 @@ class QueryMysqli extends QueryBase
      $rc = mysqli_select_db($this->connection, $this->database_name);
         if (!$rc)
           {
+echo "DB OK";
           $this->error = new DbError("Selecting database...",
             "Cannot select database.",
             $this->my_error($this->connection));
