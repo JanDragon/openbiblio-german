@@ -125,7 +125,7 @@ class BiblioQuery extends Query {
       $tag = substr($key, 0, 3);
       $subfieldCd = substr($key, 3, 1);
       $subfieldIdx = '';
-      if (count($key) > 4) {
+      if (strlen($key) > 4) {
         $index = substr($key, 4);
       }
       $this->_addField($tag, $subfieldCd, $array[$name], $bib, $subfieldIdx);

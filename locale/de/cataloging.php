@@ -73,7 +73,7 @@ $trans["PictDesc"]                 = "\$text = 'Die Bilddatei muß sich im Verze
 #*  Translation text for page biblio_new.php
 #****************************************************************************
 $trans["biblioNewFormLabel"]       = "\$text = 'Neues hinzufügen';";
-$trans["biblioNewSuccess"]         = "\$text = 'Das folgende neue Medium wurde erstellt. Um ein Exemplar hinzuzuf�gen, wähle \"Neues Exemplar\" aus dem linken Navigationsbereich oder \"Füge neues Exemplar hinzu\" aus der untenstehenden Information.';";
+$trans["biblioNewSuccess"]         = "\$text = 'Das folgende neue Medium wurde erstellt. Um ein Exemplar hinzuzufügen, wähle \"Neues Exemplar\" aus dem linken Navigationsbereich oder \"Füge neues Exemplar hinzu\" aus der untenstehenden Information.';";
 
 #****************************************************************************
 #*  Translation text for page biblio_edit.php
@@ -172,7 +172,7 @@ $trans["biblioMarcDelConfirmMsg"]  = "\$text = 'Sind sie sicher das Feld mit dem
 #****************************************************************************
 #*  Translation text for page biblio_marc_del.php
 #****************************************************************************
-$trans["biblioMarcDelSuccess"]     = "\$text = 'MARC-Feld erfolgreich gel�scht.';";
+$trans["biblioMarcDelSuccess"]     = "\$text = 'MARC-Feld erfolgreich gelöscht.';";
 
 #****************************************************************************
 #*  Translation text for page biblio_del_confirm.php
