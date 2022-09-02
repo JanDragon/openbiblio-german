@@ -1,13 +1,13 @@
--- MySQL dump 10.19  Distrib 10.3.34-MariaDB, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.30, for Linux (x86_64)
 --
--- Host: localhost    Database: OpenBiblio
+-- Host: localhost    Database: usr_web14_1
 -- ------------------------------------------------------
--- Server version	10.3.34-MariaDB-0+deb10u1
+-- Server version	8.0.30-0ubuntu0.20.04.2
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -16,12 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `OpenBiblio`
+-- Current Database: `usr_web14_1`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `OpenBiblio` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `usr_web14_1` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
-USE `OpenBiblio`;
+USE `usr_web14_1`;
 
 --
 -- Table structure for table `biblio`
@@ -29,29 +29,29 @@ USE `OpenBiblio`;
 
 DROP TABLE IF EXISTS `biblio`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `biblio` (
-  `bibid` int(11) NOT NULL AUTO_INCREMENT,
+  `bibid` int NOT NULL AUTO_INCREMENT,
   `create_dt` datetime NOT NULL,
   `last_change_dt` datetime NOT NULL,
-  `last_change_userid` int(11) NOT NULL,
-  `material_cd` smallint(6) NOT NULL,
-  `collection_cd` smallint(6) NOT NULL,
+  `last_change_userid` int NOT NULL,
+  `material_cd` smallint NOT NULL,
+  `collection_cd` smallint NOT NULL,
   `call_nmbr1` varchar(20) DEFAULT NULL,
   `call_nmbr2` varchar(20) DEFAULT NULL,
   `call_nmbr3` varchar(20) DEFAULT NULL,
-  `title` text DEFAULT NULL,
-  `title_remainder` text DEFAULT NULL,
-  `responsibility_stmt` text DEFAULT NULL,
-  `author` text DEFAULT NULL,
-  `topic1` text DEFAULT NULL,
-  `topic2` text DEFAULT NULL,
-  `topic3` text DEFAULT NULL,
-  `topic4` text DEFAULT NULL,
-  `topic5` text DEFAULT NULL,
+  `title` mediumtext,
+  `title_remainder` mediumtext,
+  `responsibility_stmt` mediumtext,
+  `author` mediumtext,
+  `topic1` mediumtext,
+  `topic2` mediumtext,
+  `topic3` mediumtext,
+  `topic4` mediumtext,
+  `topic5` mediumtext,
   `opac_flg` char(1) NOT NULL,
   PRIMARY KEY (`bibid`)
-) ENGINE=MyISAM AUTO_INCREMENT=1749 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=1749 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,22 +70,22 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `biblio_copy`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `biblio_copy` (
-  `bibid` int(11) NOT NULL,
-  `copyid` int(11) NOT NULL AUTO_INCREMENT,
+  `bibid` int NOT NULL,
+  `copyid` int NOT NULL AUTO_INCREMENT,
   `create_dt` datetime NOT NULL,
   `copy_desc` varchar(160) DEFAULT NULL,
   `barcode_nmbr` varchar(20) NOT NULL,
   `status_cd` char(3) NOT NULL,
   `status_begin_dt` datetime NOT NULL,
   `due_back_dt` date DEFAULT NULL,
-  `mbrid` int(11) DEFAULT NULL,
-  `renewal_count` tinyint(3) unsigned NOT NULL,
+  `mbrid` int DEFAULT NULL,
+  `renewal_count` tinyint unsigned NOT NULL,
   PRIMARY KEY (`bibid`,`copyid`),
   KEY `barcode_index` (`barcode_nmbr`),
   KEY `mbr_index` (`mbrid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -104,15 +104,15 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `biblio_copy_fields`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `biblio_copy_fields` (
-  `bibid` int(11) NOT NULL,
-  `copyid` int(11) NOT NULL,
+  `bibid` int NOT NULL,
+  `copyid` int NOT NULL,
   `code` varchar(16) NOT NULL,
-  `data` text NOT NULL,
+  `data` mediumtext NOT NULL,
   PRIMARY KEY (`bibid`,`copyid`,`code`),
   KEY `code_index` (`code`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -130,13 +130,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `biblio_copy_fields_dm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `biblio_copy_fields_dm` (
   `code` varchar(16) NOT NULL,
   `description` char(32) NOT NULL,
   `default_flg` char(1) NOT NULL,
   PRIMARY KEY (`code`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -154,17 +154,17 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `biblio_field`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `biblio_field` (
-  `bibid` int(11) NOT NULL,
-  `fieldid` int(11) NOT NULL AUTO_INCREMENT,
-  `tag` smallint(6) NOT NULL,
+  `bibid` int NOT NULL,
+  `fieldid` int NOT NULL AUTO_INCREMENT,
+  `tag` smallint NOT NULL,
   `ind1_cd` char(1) DEFAULT NULL,
   `ind2_cd` char(1) DEFAULT NULL,
   `subfield_cd` char(1) NOT NULL,
-  `field_data` text DEFAULT NULL,
+  `field_data` mediumtext,
   PRIMARY KEY (`bibid`,`fieldid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -183,16 +183,16 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `biblio_hold`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `biblio_hold` (
-  `bibid` int(11) NOT NULL,
-  `copyid` int(11) NOT NULL,
-  `holdid` int(11) NOT NULL AUTO_INCREMENT,
+  `bibid` int NOT NULL,
+  `copyid` int NOT NULL,
+  `holdid` int NOT NULL AUTO_INCREMENT,
   `hold_begin_dt` datetime NOT NULL,
-  `mbrid` int(11) NOT NULL,
+  `mbrid` int NOT NULL,
   PRIMARY KEY (`bibid`,`copyid`,`holdid`),
   KEY `mbr_index` (`mbrid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -210,13 +210,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `biblio_status_dm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `biblio_status_dm` (
   `code` char(3) NOT NULL,
   `description` varchar(40) NOT NULL,
   `default_flg` char(1) NOT NULL,
   PRIMARY KEY (`code`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -235,18 +235,18 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `biblio_status_hist`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `biblio_status_hist` (
-  `bibid` int(11) NOT NULL,
-  `copyid` int(11) NOT NULL,
+  `bibid` int NOT NULL,
+  `copyid` int NOT NULL,
   `status_cd` char(3) NOT NULL,
   `status_begin_dt` datetime NOT NULL,
   `due_back_dt` date DEFAULT NULL,
-  `mbrid` int(11) DEFAULT NULL,
-  `renewal_count` tinyint(3) unsigned NOT NULL,
+  `mbrid` int DEFAULT NULL,
+  `renewal_count` tinyint unsigned NOT NULL,
   KEY `mbr_index` (`mbrid`),
   KEY `copy_index` (`bibid`,`copyid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -264,14 +264,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `checkout_privs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `checkout_privs` (
-  `material_cd` smallint(6) NOT NULL,
-  `classification` smallint(6) NOT NULL,
-  `checkout_limit` tinyint(3) unsigned NOT NULL,
-  `renewal_limit` tinyint(3) unsigned NOT NULL,
+  `material_cd` smallint NOT NULL,
+  `classification` smallint NOT NULL,
+  `checkout_limit` tinyint unsigned NOT NULL,
+  `renewal_limit` tinyint unsigned NOT NULL,
   PRIMARY KEY (`material_cd`,`classification`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -290,15 +290,15 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `collection_dm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `collection_dm` (
-  `code` smallint(6) NOT NULL AUTO_INCREMENT,
+  `code` smallint NOT NULL AUTO_INCREMENT,
   `description` varchar(40) NOT NULL,
   `default_flg` char(1) NOT NULL,
-  `days_due_back` smallint(5) unsigned NOT NULL,
+  `days_due_back` smallint unsigned NOT NULL,
   `daily_late_fee` decimal(4,2) NOT NULL,
   PRIMARY KEY (`code`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -317,14 +317,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `material_type_dm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `material_type_dm` (
-  `code` smallint(6) NOT NULL AUTO_INCREMENT,
+  `code` smallint NOT NULL AUTO_INCREMENT,
   `description` varchar(40) NOT NULL,
   `default_flg` char(1) NOT NULL,
   `image_file` varchar(128) DEFAULT NULL,
   PRIMARY KEY (`code`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -343,17 +343,17 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `material_usmarc_xref`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `material_usmarc_xref` (
-  `xref_id` int(11) NOT NULL AUTO_INCREMENT,
-  `materialCd` int(11) NOT NULL DEFAULT 0,
+  `xref_id` int NOT NULL AUTO_INCREMENT,
+  `materialCd` int NOT NULL DEFAULT '0',
   `tag` char(3) NOT NULL DEFAULT '',
   `subfieldCd` char(1) NOT NULL DEFAULT '',
   `descr` varchar(64) NOT NULL DEFAULT '',
   `required` char(1) NOT NULL DEFAULT '',
   `cntrltype` char(1) NOT NULL DEFAULT '',
   PRIMARY KEY (`xref_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -371,14 +371,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `mbr_classify_dm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `mbr_classify_dm` (
-  `code` smallint(6) NOT NULL AUTO_INCREMENT,
+  `code` smallint NOT NULL AUTO_INCREMENT,
   `description` varchar(40) NOT NULL,
   `default_flg` char(1) NOT NULL,
   `max_fines` decimal(4,2) NOT NULL,
   PRIMARY KEY (`code`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -397,23 +397,23 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `member`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `member` (
-  `mbrid` int(11) NOT NULL AUTO_INCREMENT,
+  `mbrid` int NOT NULL AUTO_INCREMENT,
   `barcode_nmbr` varchar(20) NOT NULL,
   `create_dt` datetime NOT NULL,
   `last_change_dt` datetime NOT NULL,
-  `last_change_userid` int(11) NOT NULL,
+  `last_change_userid` int NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `first_name` varchar(50) NOT NULL,
-  `address` text DEFAULT NULL,
+  `address` mediumtext,
   `home_phone` varchar(15) DEFAULT NULL,
   `work_phone` varchar(15) DEFAULT NULL,
   `email` varchar(128) DEFAULT NULL,
-  `classification` smallint(6) NOT NULL,
+  `classification` smallint NOT NULL,
   `mbrshipend` date NOT NULL,
   PRIMARY KEY (`mbrid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -431,17 +431,17 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `member_account`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `member_account` (
-  `mbrid` int(11) NOT NULL,
-  `transid` int(11) NOT NULL AUTO_INCREMENT,
+  `mbrid` int NOT NULL,
+  `transid` int NOT NULL AUTO_INCREMENT,
   `create_dt` datetime NOT NULL,
-  `create_userid` int(11) NOT NULL,
+  `create_userid` int NOT NULL,
   `transaction_type_cd` char(2) NOT NULL,
   `amount` decimal(8,2) NOT NULL,
   `description` varchar(128) DEFAULT NULL,
   PRIMARY KEY (`mbrid`,`transid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -459,14 +459,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `member_fields`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `member_fields` (
-  `mbrid` int(11) NOT NULL,
+  `mbrid` int NOT NULL,
   `code` varchar(16) NOT NULL,
-  `data` text NOT NULL,
+  `data` mediumtext NOT NULL,
   PRIMARY KEY (`mbrid`,`code`),
   KEY `code_index` (`code`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -484,13 +484,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `member_fields_dm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `member_fields_dm` (
   `code` varchar(16) NOT NULL,
   `description` char(32) NOT NULL,
   `default_flg` char(1) NOT NULL,
   PRIMARY KEY (`code`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -509,12 +509,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `session`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `session` (
-  `userid` int(5) NOT NULL,
+  `userid` int NOT NULL,
   `last_updated_dt` datetime NOT NULL,
-  `token` int(5) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `token` int NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -523,7 +523,7 @@ CREATE TABLE `session` (
 
 LOCK TABLES `session` WRITE;
 /*!40000 ALTER TABLE `session` DISABLE KEYS */;
-INSERT INTO `session` VALUES (1,'2021-12-30 17:44:25',1540),(2,'2022-08-31 13:22:21',-5561),(2,'2022-08-31 13:39:17',2947),(2,'2022-08-31 13:22:04',-5998);
+INSERT INTO `session` VALUES (1,'2022-09-02 13:46:20',7094),(2,'2022-08-31 13:22:21',-5561),(2,'2022-08-31 13:39:17',2947),(2,'2022-08-31 13:22:04',-5998);
 /*!40000 ALTER TABLE `session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -533,26 +533,26 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `settings`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `settings` (
   `library_name` varchar(128) DEFAULT NULL,
-  `library_image_url` text DEFAULT NULL,
+  `library_image_url` mediumtext,
   `use_image_flg` char(1) NOT NULL,
   `library_hours` varchar(128) DEFAULT NULL,
   `library_phone` varchar(40) DEFAULT NULL,
-  `library_url` text DEFAULT NULL,
-  `opac_url` text DEFAULT NULL,
-  `session_timeout` smallint(6) NOT NULL,
-  `items_per_page` tinyint(4) NOT NULL,
+  `library_url` mediumtext,
+  `opac_url` mediumtext,
+  `session_timeout` smallint NOT NULL,
+  `items_per_page` tinyint NOT NULL,
   `version` varchar(10) NOT NULL,
-  `themeid` smallint(6) NOT NULL,
-  `purge_history_after_months` smallint(6) NOT NULL,
+  `themeid` smallint NOT NULL,
+  `purge_history_after_months` smallint NOT NULL,
   `block_checkouts_when_fines_due` char(1) NOT NULL,
-  `hold_max_days` smallint(6) NOT NULL,
+  `hold_max_days` smallint NOT NULL,
   `locale` varchar(30) NOT NULL,
   `charset` varchar(20) DEFAULT NULL,
   `html_lang_attr` varchar(8) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -561,9 +561,35 @@ CREATE TABLE `settings` (
 
 LOCK TABLES `settings` WRITE;
 /*!40000 ALTER TABLE `settings` DISABLE KEYS */;
-INSERT INTO `settings` VALUES ('Leibniz-Gymnasium, Remscheid','../images/sampleLogo.png','N','M-F 9:00-14:00','','','../opac/index.php',20,10,'0.7.1',1,6,'Y',14,'de','iso-8859-1','');
+INSERT INTO `settings` VALUES ('Leibniz-Gymnasium, Remscheid','../images/sampleLogo.png','N','M-F 9:00-14:00','','','../opac/index.php',20,10,'0.7.1',1,6,'Y',14,'de','utf-8','');
 /*!40000 ALTER TABLE `settings` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `staff`
+--
+
+DROP TABLE IF EXISTS `staff`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `staff` (
+  `userid` int NOT NULL AUTO_INCREMENT,
+  `create_dt` datetime NOT NULL,
+  `last_change_dt` datetime NOT NULL,
+  `last_change_userid` int NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `pwd` char(32) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
+  `first_name` varchar(30) DEFAULT NULL,
+  `suspended_flg` char(1) NOT NULL,
+  `admin_flg` char(1) NOT NULL,
+  `circ_flg` char(1) NOT NULL,
+  `circ_mbr_flg` char(1) NOT NULL,
+  `catalog_flg` char(1) NOT NULL,
+  `reports_flg` char(1) NOT NULL,
+  PRIMARY KEY (`userid`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Table structure for table `theme`
@@ -571,38 +597,38 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `theme`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `theme` (
-  `themeid` smallint(6) NOT NULL AUTO_INCREMENT,
+  `themeid` smallint NOT NULL AUTO_INCREMENT,
   `theme_name` varchar(40) NOT NULL,
   `title_bg` varchar(20) NOT NULL,
   `title_font_face` varchar(128) NOT NULL,
-  `title_font_size` tinyint(4) NOT NULL,
+  `title_font_size` tinyint NOT NULL,
   `title_font_bold` char(1) NOT NULL,
   `title_font_color` varchar(20) NOT NULL,
   `title_align` varchar(30) NOT NULL,
   `primary_bg` varchar(20) NOT NULL,
   `primary_font_face` varchar(128) NOT NULL,
-  `primary_font_size` tinyint(4) NOT NULL,
+  `primary_font_size` tinyint NOT NULL,
   `primary_font_color` varchar(20) NOT NULL,
   `primary_link_color` varchar(20) NOT NULL,
   `primary_error_color` varchar(20) NOT NULL,
   `alt1_bg` varchar(20) NOT NULL,
   `alt1_font_face` varchar(128) NOT NULL,
-  `alt1_font_size` tinyint(4) NOT NULL,
+  `alt1_font_size` tinyint NOT NULL,
   `alt1_font_color` varchar(20) NOT NULL,
   `alt1_link_color` varchar(20) NOT NULL,
   `alt2_bg` varchar(20) NOT NULL,
   `alt2_font_face` varchar(128) NOT NULL,
-  `alt2_font_size` tinyint(4) NOT NULL,
+  `alt2_font_size` tinyint NOT NULL,
   `alt2_font_color` varchar(20) NOT NULL,
   `alt2_link_color` varchar(20) NOT NULL,
   `alt2_font_bold` char(1) NOT NULL,
   `border_color` varchar(20) NOT NULL,
-  `border_width` tinyint(4) NOT NULL,
-  `table_padding` tinyint(4) NOT NULL,
+  `border_width` tinyint NOT NULL,
+  `table_padding` tinyint NOT NULL,
   PRIMARY KEY (`themeid`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -621,13 +647,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `transaction_type_dm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `transaction_type_dm` (
   `code` char(2) NOT NULL,
   `description` varchar(40) NOT NULL,
   `default_flg` char(1) NOT NULL,
   PRIMARY KEY (`code`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -646,12 +672,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `usmarc_block_dm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usmarc_block_dm` (
-  `block_nmbr` tinyint(4) NOT NULL,
+  `block_nmbr` tinyint NOT NULL,
   `description` varchar(80) NOT NULL,
   PRIMARY KEY (`block_nmbr`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -670,14 +696,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `usmarc_indicator_dm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usmarc_indicator_dm` (
-  `tag` smallint(6) NOT NULL,
-  `indicator_nmbr` tinyint(4) NOT NULL,
+  `tag` smallint NOT NULL,
+  `indicator_nmbr` tinyint NOT NULL,
   `indicator_cd` char(1) NOT NULL,
   `description` varchar(80) NOT NULL,
   PRIMARY KEY (`tag`,`indicator_nmbr`,`indicator_cd`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -696,14 +722,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `usmarc_subfield_dm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usmarc_subfield_dm` (
-  `tag` smallint(6) NOT NULL,
+  `tag` smallint NOT NULL,
   `subfield_cd` char(1) NOT NULL,
   `description` varchar(80) NOT NULL,
   `repeatable_flg` char(1) NOT NULL,
   PRIMARY KEY (`tag`,`subfield_cd`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -722,16 +748,16 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `usmarc_tag_dm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usmarc_tag_dm` (
-  `block_nmbr` tinyint(4) NOT NULL,
-  `tag` smallint(6) NOT NULL,
+  `block_nmbr` tinyint NOT NULL,
+  `tag` smallint NOT NULL,
   `description` varchar(80) NOT NULL,
   `ind1_description` varchar(80) NOT NULL,
   `ind2_description` varchar(80) NOT NULL,
   `repeatable_flg` char(1) NOT NULL,
   PRIMARY KEY (`block_nmbr`,`tag`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -753,4 +779,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-31 13:41:27
+-- Dump completed on 2022-09-02 13:50:41
