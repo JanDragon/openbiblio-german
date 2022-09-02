@@ -38,7 +38,7 @@
 #*  Common translation text shared among multiple pages
 #****************************************************************************
 $trans["sharedCancel"]             = "\$text = 'Abbrechen';";
-$trans["sharedDelete"]             = "\$text = 'L�schen';";
+$trans["sharedDelete"]             = "\$text = 'Löschen';";
 
 #****************************************************************************
 #*  Translation text for page biblio_view.php
@@ -53,16 +53,16 @@ $trans["biblioViewTble2Col1"]      = "\$text = 'Mediennummer';";
 $trans["biblioViewTble2Col2"]      = "\$text = 'Beschreibung';";
 $trans["biblioViewTble2Col3"]      = "\$text = 'Status';";
 $trans["biblioViewTble2Col4"]      = "\$text = 'Status Datum';";
-$trans["biblioViewTble2Col5"]      = "\$text = 'R�ckgabe';";
+$trans["biblioViewTble2Col5"]      = "\$text = 'Rückgabe';";
 $trans["biblioViewTble2ColFunc"]   = "\$text = 'Funktion';";
-$trans["biblioViewTble2Coldel"]    = "\$text = 'L�sche';";
+$trans["biblioViewTble2Coldel"]    = "\$text = 'Lösche';";
 $trans["biblioViewTble2Coledit"]   = "\$text = 'Bearb.';";
-$trans["biblioViewTble3Hdr"]       = "\$text = 'Zus�tzliche Medieninformationen';";
-$trans["biblioViewNoAddInfo"]      = "\$text = 'Keine zus�tzliche Medieninformationen verf�gbar.';";
+$trans["biblioViewTble3Hdr"]       = "\$text = 'Zusätzliche Medieninformationen';";
+$trans["biblioViewNoAddInfo"]      = "\$text = 'Keine zusätzliche Medieninformationen verfügbar.';";
 $trans["biblioViewNoCopies"]       = "\$text = 'Keine Exemplare wurden erstellt.';";
 $trans["biblioViewOpacFlg"]        = "\$text = 'Zeige im OPAC';";
-$trans["biblioViewNewCopy"]        = "\$text = 'F�ge neues Exemplar hinzu';";
-$trans["biblioViewNeweCopy"]       = "\$text = 'F�ge neues Exemplar hinzu';";
+$trans["biblioViewNewCopy"]        = "\$text = 'Füge neues Exemplar hinzu';";
+$trans["biblioViewNeweCopy"]       = "\$text = 'Füge neues Exemplar hinzu';";
 $trans["biblioViewYes"]            = "\$text = 'Ja';";
 $trans["biblioViewNo"]             = "\$text = 'Nein';";
 
@@ -72,7 +72,7 @@ $trans["biblioViewNo"]             = "\$text = 'Nein';";
 $trans["biblioSearchNoResults"]    = "\$text = 'Keine Ergebnisse gefunden.';";
 $trans["biblioSearchResults"]      = "\$text = 'Suchergebnisse';";
 $trans["biblioSearchResultPages"]  = "\$text = 'Ergebnis-Seiten';";
-$trans["biblioSearchPrev"]         = "\$text = 'zur�ck';";
+$trans["biblioSearchPrev"]         = "\$text = 'zurück';";
 $trans["biblioSearchNext"]         = "\$text = 'vor';";
 $trans["First"]         	   = "\$text = 'Anfang';";
 $trans["Last"]         		   = "\$text = 'Ende';";
@@ -93,7 +93,7 @@ $trans["biblioSearchCollection"]   = "\$text = 'Genre';";
 $trans["biblioSearchCall"]         = "\$text = 'Standort';";
 $trans["biblioSearchCopyBCode"]    = "\$text = 'Mediennummer des Exempl.';";
 $trans["biblioSearchCopyStatus"]   = "\$text = 'Status';";
-$trans["biblioSearchNoCopies"]     = "\$text = 'Keine Exempl. verf�gbar.';";
+$trans["biblioSearchNoCopies"]     = "\$text = 'Keine Exempl. verfügbar.';";
 $trans["biblioSearchHold"]         = "\$text = 'vorbestellen';";
 $trans["biblioSearchOutIn"]        = "\$text = 'ein-/ausbuchen';";
 $trans["biblioSearchDetail"]       = "\$text = 'Detailierte Medieninfos anzeigen';";
@@ -111,30 +111,30 @@ $trans["loginFormLogin"]           = "\$text = 'Login';";
 #****************************************************************************
 #*  Translation text for page login.php
 #****************************************************************************
-$trans["loginUserNameReqErr"]      = "\$text = 'Benutzername wird ben�tigt.';";
-$trans["loginPwdReqErr"]           = "\$text = 'Passwort wird ben�tigt.';";
+$trans["loginUserNameReqErr"]      = "\$text = 'Benutzername wird benötigt.';";
+$trans["loginPwdReqErr"]           = "\$text = 'Passwort wird benötigt.';";
 $trans["loginPwdInvErr"]           = "\$text = 'Anmeldung fehlgeschlagen.';";
 
 #****************************************************************************
 #*  Translation text for page hold_del_confirm.php
 #****************************************************************************
-$trans["holdDelConfirmMsg"]        = "\$text = 'Sind Sie sicher diese Vorbestellung zu l�schen?';";
+$trans["holdDelConfirmMsg"]        = "\$text = 'Sind Sie sicher diese Vorbestellung zu löschen?';";
 
 #****************************************************************************
 #*  Translation text for page hold_del.php
 #****************************************************************************
-$trans["holdDelSuccess"]           = "\$text='Die Vorbestellung wurde erfolgreich gel�scht.';";
+$trans["holdDelSuccess"]           = "\$text='Die Vorbestellung wurde erfolgreich gelöscht.';";
 
 #****************************************************************************
 #*  Translation text for page help_header.php
 #****************************************************************************
 $trans["helpHeaderTitle"]          = "\$text='OpenBiblio Hilfe';";
-$trans["helpHeaderCloseWin"]       = "\$text='Schlie�e Fenster';";
+$trans["helpHeaderCloseWin"]       = "\$text='Schließe Fenster';";
 $trans["helpHeaderContents"]       = "\$text='Inhalte';";
 $trans["helpHeaderPrint"]          = "\$text='Drucke';";
 
 $trans["catalogResults"]           = "\$text='Search Results';";
-$trans["Revise Page"]              = "\$text='�berarb. S.';";
+$trans["Revise Page"]              = "\$text='Überarb. S.';";
 $trans["wiki updates to this page"] = "\$text='Wiki Updates dieser Seite';";
 
 #****************************************************************************
@@ -142,7 +142,7 @@ $trans["wiki updates to this page"] = "\$text='Wiki Updates dieser Seite';";
 #****************************************************************************
 $trans["headerTodaysDate"]         = "\$text='Heutiges Datum:';";
 $trans["headerDateFormat"]         = "\$text='d.m.Y';";
-$trans["headerLibraryHours"]       = "\$text='�ffnungszeiten:';";
+$trans["headerLibraryHours"]       = "\$text='Öffnungszeiten:';";
 $trans["headerLibraryPhone"]       = "\$text='Telefonnummer:';";
 $trans["headerHome"]               = "\$text='Startseite';";
 $trans["headerCirculation"]        = "\$text='Ausleihe';";
@@ -157,9 +157,9 @@ $trans["footerLibraryHome"]        = "\$text='Bibliothekshomepage';";
 $trans["footerOPAC"]               = "\$text='OPAC';";
 $trans["footerHelp"]               = "\$text='Hilfe';";
 $trans["footerPoweredBy"]          = "\$text='Powered by OpenBiblio version';";
-$trans["footerDatabaseVersion"]    = "\$text='database version';";
+$trans["footerDatabaseVersion"]    = "\$text='Datenbankversion';";
 $trans["footerCopyright"]          = "\$text='Copyright';";
-$trans["footerUnderThe"]           = "\$text='under the';";
+$trans["footerUnderThe"]           = "\$text='veröffentlich unter der';";
 $trans["footerGPL"]                = "\$text='GNU General Public License';";
 
 
