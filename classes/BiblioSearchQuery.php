@@ -26,7 +26,7 @@ class BiblioSearchQuery extends Query {
   var $_pageCount = 0;
   var $_loc;
 
-  function BiblioSearchQuery() {
+  function __construct() {
     $this->Query();
     $this->_loc = new Localize(OBIB_LOCALE,"classes");
   }

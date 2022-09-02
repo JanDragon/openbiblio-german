@@ -7,7 +7,7 @@
 class FieldError extends ObibError {
   /* public */
   var $field;
-  function FieldError($field, $msg) {
+  function __construct($field, $msg) {
     parent::ObibError($msg);
     $this->field = $field;
   }
