@@ -78,7 +78,7 @@
 ?>
 
 <form name="editsettingsform" method="POST" action="../admin/settings_edit.php">
-<input type="hidden" name="code" value="<?php echo H($postVars["code"]);?>">
+<input type="hidden" name="code" value="<?php echo (array_key_exists('code',$postVars))? H($postVars['code']):'';?>">
 <table class="primary">
   <tr>
     <th colspan="2" nowrap="yes" align="left">
