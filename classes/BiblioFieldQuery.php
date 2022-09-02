@@ -20,7 +20,7 @@ class BiblioFieldQuery extends Query {
   var $_rowCount = 0;
   var $_loc;
 
-  function BiblioFieldQuery() {
+  function __construct() {
     $this->Query();
     $this->_loc = new Localize(OBIB_LOCALE,"classes");
   }
