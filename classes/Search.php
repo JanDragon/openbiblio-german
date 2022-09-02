@@ -64,7 +64,7 @@ class Search {
     if ($ac == $bc) {
       return 0;
     }
-    return $ac > bc ? -1 : +1;
+    return $ac > $bc ? -1 : +1;
   }
   function explodeQuoted($str) {
     $elements=array();
