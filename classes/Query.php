@@ -103,8 +103,7 @@ class Query {
       Fatal::internalError('Negative lock depth');
     }
     if ($_Query_lock_depth == 0) {
-      $row = $this->select1($this->mkSQL('select get_lock(%Q, %N) as locked',
-                                         OBIB_LOCK_NAME, OBIB_LOCK_TIMEOUT));
+      $row = $this->select1($this->mkSQL('select get_lock(%Q, %N) as locked',OBIB_LOCK_NAME, OBIB_LOCK_TIMEOUT));
       if (!isset($row['locked']) or $row['locked'] != 1) {
         Fatal::cantLock();
       }
@@ -118,8 +117,7 @@ class Query {
     }
     $_Query_lock_depth--;
     if ($_Query_lock_depth == 0) {
-      $this->act($this->mkSQL('do release_lock(%Q)',
-                             OBIB_LOCK_NAME));
+      $this->act($this->mkSQL('do release_lock(%Q)',OBIB_LOCK_NAME));
     }
   }
 

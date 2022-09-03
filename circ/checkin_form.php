@@ -122,7 +122,7 @@ function checkin(massCheckinFlg)
 		      if (($lDays==0) and ($lMonths==0) and ($lYears==0)) $overMsg="";
 	      }
       }
-      echo $overMsg;
+      if (isset($overMsg)) echo $overMsg;
     } else {
       echo '<p>'.$loc->getText("Checked in %barcode%.", array('barcode'=>htmlspecialchars($_GET['barcode']))).'</p>';
     }

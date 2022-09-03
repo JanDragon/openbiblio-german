@@ -76,16 +76,18 @@
   }
 
   #****************************************************************************
-  #*  Pr�fung auf Hinweis wegen Ablauf der Mitgliedschaft vor R�ckgabedatum
+  #*  Prüfung auf Hinweis wegen Ablauf der Mitgliedschaft vor Rückgabedatum
   #*  Derzeit abgedeckt durch Missbrauch des Fehlercodes und Markierung mit !!! davor
   #****************************************************************************
   $dueMsg = "";
-  $pgErrors = $_SESSION['pageErrors'];
-  if (substr($pgErrors["barcodeNmbr"], 0, 3) === '!!!') {
-	  $dueMsg = "<font class=\"error\">".substr($pgErrors["barcodeNmbr"], 3)."</font><br><br>";
+  if (array_key_exists('pageErrors',$_SESSION)) {
+     $pgErrors = $_SESSION['pageErrors'];
+     if (isset($pgErrors["barcodeNmbr"]) && substr($pgErrors["barcodeNmbr"], 0, 3) === '!!!') {
+          $dueMsg = "<font class=\"error\">".substr($pgErrors["barcodeNmbr"], 3)."</font><br><br>";
 	  unset($postVars);
   	  unset($pageErrors);
-  } 
+     }   
+   }
 
   #****************************************************************************
   #*  Make sure member does not have expired membership
