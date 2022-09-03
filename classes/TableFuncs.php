@@ -7,7 +7,7 @@ class TableFuncs {
   function raw($col, $row, $params) {
     return $row[$col['name']];
   }
-  function _link_common($col, $row, $params, $url, $rpt_colname=NULL) {
+  static function _link_common($col, $row, $params, $url, $rpt_colname=NULL) {
     if ($rpt_colname and isset($params['rpt']) and isset($params['rpt_colnames'])
         and in_array($rpt_colname, $params['rpt_colnames'])) {
       assert('$row[".seqno"] !== NULL');
@@ -31,7 +31,7 @@ class TableFuncs {
     $url = '../shared/cart_del.php?name=bibid&amp;id[]='.HURL($row['bibid']).'&amp;tab='.HURL($tab);
     return TableFuncs::_link_common($col, $row, $params, $url);
   }
-  function biblio_link($col, $row, $params) {
+  static function biblio_link($col, $row, $params) {
     global $tab;	# FIXME - get rid of $tab
     $url = '../shared/biblio_view.php?bibid='.HURL($row['bibid']);
     if ($tab != 'opac') {
