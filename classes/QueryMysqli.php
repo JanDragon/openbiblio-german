@@ -15,10 +15,10 @@ class QueryMysqli extends QueryBase
       $this->connection = mysqli_connect($this->host, $this->username, $this->password);
       if ($this->connection_is())
         {
-     $rc = mysqli_select_db($this->connection, $this->database_name);
+        $this->query("SET @@SQL_MODE = REPLACE(@@SQL_MODE, 'NO_ZERO_DATE', '')");
+        $rc = mysqli_select_db($this->connection, $this->database_name);
         if (!$rc)
           {
-echo "DB OK";
           $this->error = new DbError("Selecting database...",
             "Cannot select database.",
             $this->my_error($this->connection));

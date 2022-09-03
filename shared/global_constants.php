@@ -52,6 +52,10 @@ define("OBIB_MYSQL_DATETIME_FORMAT","Y-m-d H:i:s");
 define("OBIB_MYSQL_DATE_TYPE","date");
 define("OBIB_MYSQL_DATE_FORMAT","Y-m-d");
 
+define("OBIB_LOCK_NAME","bibliolock");
+define("OBIB_LOCK_TIMEOUT","0");
+
+
 define("OBIB_BARCODE_RE", '/^[A-Za-z0-9._\/\-]+$/');
 
 define("OBIB_LOCALE_ROOT","../locale");

@@ -22,11 +22,6 @@ class QueryAny
         require_once("../classes/QueryMysqli.php");
         $db_code = new QueryMysqli();
         }
-      elseif (function_exists('mysql_connect'))
-        {
-        require_once("../classes/QueryMysql.php");
-        $db_code = new QueryMysql();
-        }
       elseif (function_exists('PDO'))
         {
         require_once("../classes/QueryPDO.php");
