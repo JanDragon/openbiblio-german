@@ -85,7 +85,7 @@ class Lay_Compound_Element {
       $elem->paint($pos);
     }
     $this->display->endClip();
-    if ($this->p['border']) {
+    if (array_key_exists('border',$this->p)) {
       $this->display->line($point, array('x'=>$point['x'], 'y'=>$max_clip['y']));
       $this->display->line($point, array('x'=>$max_clip['x'], 'y'=>$point['y']));
       $this->display->line($max_clip, array('x'=>$point['x'], 'y'=>$max_clip['y']));
