@@ -32,6 +32,7 @@ class PDF {
   var $LineWidth;          //line width in user unit
   var $fonts;              //array of used fonts
   var $FontFiles;          //array of font files
+  var $fontName;
   var $diffs;              //array of encoding differences
   var $images;             //array of used images
   var $currentFont;        //current font info
