@@ -14,7 +14,7 @@
   #****************************************************************************
   #*  Checking for post vars.  Go back to form if none found.
   #****************************************************************************
-  array $pageErrors;
+  $pageErrors = array();
   if (count($_POST) == 0) {
     header("Location: ../shared/loginform.php");
     exit();
