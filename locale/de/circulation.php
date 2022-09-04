@@ -164,8 +164,8 @@ $trans["Cancel"]                  = "\$text='Abbrechen';";
 #****************************************************************************
 #*  Translation text for page checkout.php
 #****************************************************************************
-$trans["checkoutBalErr"]          = "\$text='Der Benutzer mu� ausstehende Gebühren zahlen, bevor er ausleihen darf.';";
-$trans["checkoutEndErr"]          = "\$text='Der Benutzer mu� die Mitgliedschaft verl�ngern, bevor er ausleihen darf.';";
+$trans["checkoutBalErr"]          = "\$text='Der Benutzer muß ausstehende Gebühren zahlen, bevor er ausleihen darf.';";
+$trans["checkoutEndErr"]          = "\$text='Der Benutzer muß die Mitgliedschaft verlängern, bevor er ausleihen darf.';";
 $trans["checkoutErr1"]            = "\$text='Die Mediennummer darf nur aus Zahlen und Buchstaben bestehen.';";
 $trans["checkoutErr2"]            = "\$text='Kein Medium mit dieser Nummer wurde gefunden.';";
 $trans["checkoutErr3"]            = "\$text='Das Medium mit der Nummer %barcode% ist bereits ausgeliehen.';";
@@ -198,7 +198,7 @@ $trans["checkinFormColHdr4"]      = "\$text='Autor';";
 $trans["checkinFormEmptyCart"]    = "\$text='Derzeit sind keine Medien im Eingangsregal.';";
 $trans["Checked in %barcode% for "]    = "\$text='Exemplar %barcode% zurückgenommen von ';";
 $trans["Checked in %barcode%."]   = "\$text='Exemplar %barcode% zurückgenommen.';";
-$trans["checkinEndErr"]          = "\$text='Die Mitgliedschaft ist abgelaufen. Das Mitglied muss entweder die Mitgliedschaft verlängern oder f�r %monthlate% Monate nachzahlen.';";
+$trans["checkinEndErr"]          = "\$text='Die Mitgliedschaft ist abgelaufen. Das Mitglied muss entweder die Mitgliedschaft verlängern oder für %monthlate% Monate nachzahlen.';";
 
 #****************************************************************************
 #*  Translation text for page checkin.php
@@ -225,7 +225,7 @@ $trans["This item is not checked out or on hold."]           = "\$text='Dieses E
 #****************************************************************************
 $trans["mbrDelConfirmWarn"]       = "\$text = 'Der Benutzer, %name%, hat %checkoutCount% Ausleihe(n) und %holdCount% Vorbestellung(en). Alle ausgeliehenen Medien müssen zurückgegeben und alle Vorbestellungen gelöscht werden, um den Benutzer zu löschen.';";
 $trans["mbrDelConfirmReturn"]     = "\$text = 'Kehre zur Benutzerinformation zurück';";
-$trans["mbrDelConfirmMsg"]        = "\$text = 'Sind sie sicher, da� sie den Benutzer %name% löschen wollen? Dieses wird auch die Ausleihhistory von ihm löschen.';";
+$trans["mbrDelConfirmMsg"]        = "\$text = 'Sind sie sicher, daß sie den Benutzer %name% löschen wollen? Dieses wird auch die Ausleihhistory von ihm löschen.';";
 
 #****************************************************************************
 #*  Translation text for page mbr_del.php
@@ -302,7 +302,7 @@ $trans["Date:"]     = "\$text='Datum:';";
 $trans["Command File:"]     = "\$text='Kommandodatei:';";
 $trans["Bad upload file: Expected a command code, but didn't get one"]     = "\$text='Fehlerhafte Datei: Kommandocode erwartet, aber keinen erhalten';";
 $trans["Couldn't check out %item% to %member%: %error%"]     = "\$text='Konnte Exemplar %item% an %member% nicht ausleihen: %error%';";
-$trans["Couldn't check in %item%: %error%"]     = "\$text='Konnte Exemplar %item% nicht zur�cknehmen: %error%';";
+$trans["Couldn't check in %item%: %error%"]     = "\$text='Konnte Exemplar %item% nicht zurücknehmen: %error%';";
 $trans["Unrecognized command code: %cmd%"]     = "\$text='Nicht erkanntes Kommando: %cmd%';";
 $trans["Command Sheet"]     = "\$text='Kommandoübersichtsblatt';";
 $trans["Actions which did not produce an error have completed. Think carefully before uploading the same file again, or some circulations may be recorded twice."]     = "\$text='Aktionen die keinen Fehler produzieren wurden ausgeführt. Passen Sie auf, dass Sie keine Datei doppelt hochladen, da sonst einige Ausleihen doppelt erfasst werden.';";
