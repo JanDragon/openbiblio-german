@@ -163,7 +163,7 @@ $trans["admin_materials_listNewadded"]                 = "\$text = ', wurde hinz
 #****************************************************************************
 #*  Translation text for page materials_new_form.php
 #****************************************************************************
-$trans["admin_materials_new_formNoteText"]                 = "\$text = 'Die Bilddatei mu� sich im Verzeichnis openbiblio/images befinden.';";
+$trans["admin_materials_new_formNoteText"]                 = "\$text = 'Die Bilddatei muß sich im Verzeichnis openbiblio/images befinden.';";
 
 #****************************************************************************
 #*  Translation text for page noauth.php
@@ -399,7 +399,7 @@ $trans["edit"]                             = "\$text = 'Bearb.';";
 #*  Translation text for Copy Fields 
 #****************************************************************************
 
-$trans["Copy field, %desc%, has been deleted."] = "\$text = 'Exemplarfeld, %desc%, wurde gel�scht.';";
+$trans["Copy field, %desc%, has been deleted."] = "\$text = 'Exemplarfeld, %desc%, wurde gelöscht.';";
 $trans["return to copy field list"]             = "\$text = 'Zurück zur Exemplarfeldliste';";
 $trans["return to copy fields list"]             = "\$text = 'Zurück zur Exemplarfeldliste';";
 $trans["Are you sure you want to delete field '%desc%'?"] = "\$text = 'Sind Sie sicher, dass sie das Feld \'%desc%\' löschen wollen?';";
