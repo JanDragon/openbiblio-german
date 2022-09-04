@@ -16,6 +16,7 @@ class QueryMysqli extends QueryBase
       if ($this->connection_is())
         {
         $this->query("SET @@SQL_MODE = REPLACE(@@SQL_MODE, 'NO_ZERO_DATE', '')");
+        $this->query("SET CHARACTER SET utf8mb4");
         $rc = mysqli_select_db($this->connection, $this->database_name);
         if (!$rc)
           {
