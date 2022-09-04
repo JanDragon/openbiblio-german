@@ -316,7 +316,7 @@ class Lay_Lines extends Lay_Container {
   function tooBig($dim) {
     $toobig = array();
     foreach ($dim as $d=>$size) {
-      if ($size > $this->child_max_dim[$d]) {
+      if (array_key_exists($d, $this->child_max_dim) && $size > $this->child_max_dim[$d]) {
         $toobig[$d] = $size;
       }
     }
