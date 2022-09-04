@@ -88,7 +88,7 @@ $trans["mbrViewNoCheckouts"]      = "\$text='Derzeit keine Medien ausgeliehen.';
 $trans["Cannot renew item *"]     = "\$text='Kann Medium nicht verlängern *';";
 $trans["Renew item"]              = "\$text='Verlängere Medium';";
 $trans["mbrViewOutHdr9"]          = "\$text='Mal';";
-$trans["* You cannot renew, if you are more then 7 days too late"] = "\$text='* Medien, die mehr als 7 Tage überfällig sind, k�nnen nicht verlängert werden.';";
+$trans["* You cannot renew, if you are more then 7 days too late"] = "\$text='* Medien, die mehr als 7 Tage überfällig sind, können nicht verlängert werden.';";
 $trans["mbrViewHead5"]            = "\$text='Vorbestellen:';";
 $trans["mbrViewBarcode"]          = "\$text='Mediennummer:';";
 $trans["indexSearch"]             = "\$text='Suche';";
