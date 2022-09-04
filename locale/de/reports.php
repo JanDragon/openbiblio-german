@@ -96,13 +96,13 @@ $trans["reportCriteriaStartOnLabel"] = "\$text = 'Beginne mit Etikett:';";
 $trans["reportCriteriaOutput"]     = "\$text = 'Ausgabe Typ:';";
 $trans["reportCriteriaOutputHTML"] = "\$text = 'HTML';";
 $trans["reportCriteriaOutputCSV"]  = "\$text = 'CSV';";
-$trans["Reverse"]  		   = "\$text = 'R�ckw�rts';";
+$trans["Reverse"]  		   = "\$text = 'Rückwärts';";
 $trans["Report Criteria"]          = "\$text = 'Berichtskriterien';";
 
 #****************************************************************************
 #*  Translation text for page run_report.php
 #****************************************************************************
-$trans["runReportReturnLink1"]     = "\$text = 'Auswahlkriterium f�r den Bericht';";
+$trans["runReportReturnLink1"]     = "\$text = 'Auswahlkriterium für den Bericht';";
 $trans["runReportReturnLink2"]     = "\$text = 'Bericht';";
 $trans["runReportTotal"]           = "\$text = 'Gesamtzeilen:';";
 $trans["Result Pages: "]           = "\$text = 'Ergebnis-Seiten: ';";
@@ -222,7 +222,7 @@ $trans["# Checkouts, Author, Title"] = "\$text = '# Ausleihen pro Autor und Tite
 $trans["Most Checkouts, Author, Title"] = "\$text = 'Meisten Ausleihen pro Autor und Titel';";
 $trans["HTML (page-by-page)"]      = "\$text = 'HTML (seitenweise)';";
 $trans["Format"]                   = "\$text = 'Format';";
-$trans["HTML (one big page)"]      = "\$text = 'HTML (eine gro�e Seite)';";
+$trans["HTML (one big page)"]      = "\$text = 'HTML (eine große Seite)';";
 $trans["CSV"]                      = "\$text = 'CSV';";
 $trans["Sort By"]                  = "\$text = 'Sortieren nach';";
 $trans["Cataloging"]               = "\$text = 'Katalogisierung';";
