@@ -65,7 +65,7 @@ class TableFuncs {
     $url = '../circ/booking_view.php?bookingid='.HURL($row['bookingid']);
     return TableFuncs::_link_common($col, $row, $params, $url, 'bookingid');
   }
-  function member_link($col, $row, $params) {
+  static function member_link($col, $row, $params) {
     $url = '../circ/mbr_view.php?mbrid='.HURL($row['mbrid']);
     return TableFuncs::_link_common($col, $row, $params, $url, 'mbrid');
   }
