@@ -79,9 +79,9 @@ $trans["biblioCopyQueryErr4"]     = "\$text = 'Fehler beim Zugriff auf das Exemp
 $trans["biblioCopyQueryErr5"]     = "\$text = 'Fehler bei der Aktualisierung des Exemplars.';";
 $trans["biblioCopyQueryErr6"]     = "\$text = 'Fehler beim Löschen des Exemplars.';";
 $trans["biblioCopyQueryErr7"]     = "\$text = 'Fehler beim Zugriff auf die Medieninformation um den Genrecode zu bekommen.';";
-$trans["biblioCopyQueryErr8"]     = "\$text = 'Fehler beim Zugriff auf die Genreinforamtionen um R�ckgabe-Datum zu erstellen.';";
+$trans["biblioCopyQueryErr8"]     = "\$text = 'Fehler beim Zugriff auf die Genreinforamtionen um Rückgabe-Datum zu erstellen.';";
 $trans["biblioCopyQueryErr9"]     = "\$text = 'Fehler bei der Rückgabe des Exemplars';";
-$trans["biblioCopyQueryErr10"]    = "\$text = 'Fehler beim Überpr�fen der Ausleihlimits';";
+$trans["biblioCopyQueryErr10"]    = "\$text = 'Fehler beim Überprüfen der Ausleihlimits';";
 $trans["biblioCopyQueryErr11"]    = "\$text = 'Fehler beim Ermitteln der Kopie mit der größten Nummer.';";
 
 #****************************************************************************
@@ -166,8 +166,8 @@ $trans["labelFormatColErr"]       = "\$text = 'Ungültige Spalten in der Etikett
 $trans["labelFormatColErr2"]      = "\$text = 'Ungültige Spalten in der Etikettendefinitionsdatei. Die Spalten müssen größer als Null sein.';";
 $trans["labelFormatWidthErr"]     = "\$text = 'Ungültige Breite in der Etikettendefinitionsdatei. Die Breite muß numerisch sein.';";
 $trans["labelFormatWidthErr2"]    = "\$text = 'Ungültige Breite in der Etikettendefinitionsdatei. Die Breite muß größer als Null sein.';";
-$trans["labelFormatHeightErr"]    = "\$text = 'Ungültige H�he in der Etikettendefinitionsdatei. Die Höhe muß numerisch sein.';";
-$trans["labelFormatHeightErr2"]   = "\$text = 'Ungültige H�he in der Etikettendefinitionsdatei. Die Höhe mu� größer als Null sein.';";
+$trans["labelFormatHeightErr"]    = "\$text = 'Ungültige Höhe in der Etikettendefinitionsdatei. Die Höhe muß numerisch sein.';";
+$trans["labelFormatHeightErr2"]   = "\$text = 'Ungültige Höhe in der Etikettendefinitionsdatei. Die Höhe muß größer als Null sein.';";
 $trans["labelFormatNoLabelsErr"]  = "\$text = 'Ungültige Zeilen in der Etikettendefinitionsdatei.';";
 
 #****************************************************************************
@@ -198,7 +198,7 @@ $trans["memberAccountQueryErr3"]    = "\$text = 'Fehler beim Löschen von Benutz
 #*  Translation text for class CircQuery
 #****************************************************************************
 $trans["Can't understand date: %err%"]                            = "\$text = 'Verstehe Datum nicht: %err%';";
-$trans["Won't do checkouts for future dates."]                    = "\$text = 'Kann nicht an zuk�nftigem Datum ausleihen.';";
+$trans["Won't do checkouts for future dates."]                    = "\$text = 'Kann nicht an zukünftigem Datum ausleihen.';";
 $trans["Bad member barcode: %bcode%"]                             = "\$text = 'Falsche Mitgliedsnummer: %bcode%';";
 $trans["Member owes fines: checkout not allowed"]                 = "\$text = 'Beim Mitglied gibt es Gebühren: Ausleihen nicht erlaubt';";
 $trans["Member must renew membership before checking out."]       = "\$text = 'Das Mitglied muss seine Mitgliedschaft verlängern bevor es ausleihen darf.';";
@@ -208,7 +208,7 @@ $trans["Item %bcode% is late and cannot be renewed."]             = "\$text = 'D
 $trans["Item %bcode% is on hold."]                                = "\$text = 'Das Exemplar %bcode% ist schon vorbestellt.';";
 $trans["Item %bcode% is already checked out to another member."]  = "\$text = 'Das Exemplar %bcode% ist bereits an ein anderes Mitglied verliehen.';";
 $trans["Item %bcode% isn't out and cannot be renewed."]  	   = "\$text = 'Das Exemplar %bcode% ist nicht ausgeliehen und kann daher nicht verlängert werden.';";
-$trans["Member has reached checkout limit for this collection."]  = "\$text = 'Das Mitglied hat sein Ausleihlimit f�r dieses Genre erreicht.';";
+$trans["Member has reached checkout limit for this collection."]  = "\$text = 'Das Mitglied hat sein Ausleihlimit für dieses Genre erreicht.';";
 $trans["Checkouts are disallowed for this collection."]           = "\$text = 'Dieses Genre darf nicht verliehen werden.';";
 $trans["Item is on hold for another member."]                     = "\$text = 'Das Exemplar ist für jemand anderen vorbestellt.';";
 $trans["!!!Note : due date is after the end of the membership"] = "\$text = '!!!Hinweis : geplantes Rückgabedatum ist nach dem Ende der Mitgliedschaft!';";
