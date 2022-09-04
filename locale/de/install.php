@@ -43,7 +43,7 @@ $trans["installHeadline"]        = "\$text='OpenBiblio Installation:';";
 #****************************************************************************
 #*  Translation text for page cancel_msg.php
 #****************************************************************************
-$trans["cancelMessage"]         = "\$text='Der OpenBiblio-Installationsproze� wurde angehalten.';";
+$trans["cancelMessage"]         = "\$text='Der OpenBiblio-Installationsprozeß wurde angehalten.';";
 $trans["cancelShow"]            = "\$text='Zeige Installationsanleitung';";
 
 #****************************************************************************
@@ -59,7 +59,7 @@ $trans["indexInstr3"]           = "\$text='Updaten Sie openbibilio/database_cons
 $trans["indexInstr4"]           = "\$text='Schauen Sie für mehr Details auch';";
 $trans["indexInstr5"]           = "\$text='die Installationsanleitung';";
 $trans["indexInstr6"]           = "\$text='an.';";
-$trans["indexStart"]            = "\$text='Die Datenbankverbindung ist ok. Bitte w�hlen Sie eine Sprache aus und dr�cken Sie den Installiere-Knopf.';";
+$trans["indexStart"]            = "\$text='Die Datenbankverbindung ist ok. Bitte wählen Sie eine Sprache aus und drücken Sie den Installiere-Knopf.';";
 $trans["indexLang"]             = "\$text='Sprache:';";
 $trans["indexTest"]             = "\$text='Installiere Testdaten:';";
 $trans["indexInstall"]          = "\$text='Installiere';";
@@ -77,7 +77,7 @@ $trans["FuncsErr1"]             = "\$text='Fehler beim Lesen von';";
 #****************************************************************************
 $trans["installOK"]             = "\$text='Die Verbindung zur Datenbank ist ok.';";
 $trans["installCreate"]         = "\$text='Erstelle OpenBiblio Tabellen...';";
-$trans["installAlready"]        = "\$text='ist bereits installiert. Sind Sie sicher, da� sie alle Daten löschen und neue Tabellen erstellen wollen?';";
+$trans["installAlready"]        = "\$text='ist bereits installiert. Sind Sie sicher, daß sie alle Daten löschen und neue Tabellen erstellen wollen?';";
 $trans["installCont"]           = "\$text='Weiter';";
 $trans["installStop"]           = "\$text='Abbrechen';";
 $trans["installTable"]          = "\$text='Tabelle ';";
@@ -94,7 +94,7 @@ $trans["installReady2"]         = "\$text='benutze OpenBiblio';";
 $trans["UpdateHead"]            = "\$text='OpenBiblio Update:';";
 $trans["UpdateOK"]              = "\$text='Die Datenbank-Verbindung ist ok!';";
 $trans["UpdateErr1"]            = "\$text='Version 0.3.0 der OpenBiblio Daten konnte nicht gefunden werden.';";
-$trans["UpdateAlready"]         = "\$text='ist derzeit installiert. Sind Sie sicher, da� Sie alle Daten zu Version 0.4.0 konvertieren wollen?';";
+$trans["UpdateAlready"]         = "\$text='ist derzeit installiert. Sind Sie sicher, daß Sie alle Daten zu Version 0.4.0 konvertieren wollen?';";
 $trans["UpdateCont"]            = "\$text='Weiter';";
 $trans["UpdateStop"]            = "\$text='Abbrechen';";
 $trans["UpdateTable"]           = "\$text='Tabelle ';";
